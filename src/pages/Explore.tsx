@@ -1,8 +1,11 @@
 import { FC } from "react"
+import Header from "../components/Header"
 
 const Explore: FC = () => {
   return (
-    <div>Explore</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 export default Explore

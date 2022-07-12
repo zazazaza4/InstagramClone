@@ -4,7 +4,7 @@ import { HOME_ROUTE, LOGIN_ROUTE } from "../utils/consts";
 import { FC } from "react";
 
 const AppRouter:FC = () => {
-    const user = false;
+    const user = true;
 
     return user ? 
         (   

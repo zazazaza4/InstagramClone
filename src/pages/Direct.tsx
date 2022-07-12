@@ -1,8 +1,11 @@
 import { FC } from "react"
+import Header from "../components/Header"
 
 const Direct: FC = () => {
   return (
-    <div>Direct</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 export default Direct
