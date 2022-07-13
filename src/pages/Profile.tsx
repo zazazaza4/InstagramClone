@@ -1,8 +1,14 @@
 import { FC } from "react"
+import Header from "../components/Header"
 
 const Profile: FC = () => {
   return (
-    <div>Profile</div>
+    <div>
+      <Header/>
+      <main className="">
+        
+      </main>
+    </div>
   )
 }
 export default Profile

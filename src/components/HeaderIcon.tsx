@@ -8,7 +8,7 @@ interface HeaderIconProps {
 
 const HeaderIcon: FC<HeaderIconProps> = (props) => {
     const { Icon, IconActive, active } = props;
-    const classNameIcons = `h-6 w-6 text-gray-900 active:text-gray-400 text-center sm:h-7 mx-auto`
+    const classNameIcons = `h-7 w-7 text-gray-900 active:text-gray-400 text-center sm:h-7 mx-auto`
 
     return (
         <div className="flex items-center cursor-pointer  sm:h-14

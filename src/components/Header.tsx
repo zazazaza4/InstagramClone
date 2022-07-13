@@ -26,17 +26,17 @@ const Header: FC = () => {
             </div>
             {/* Center */}
             <div className="hidden md:block">
-                    <div className="flex rounded w-72 items-center bg-gray-400 bg-opacity-20 py-1 px-3">
+                    <div className="flex rounded w-64 items-center bg-gray-400 bg-opacity-20 py-1 px-3">
                         <BsSearch className="h-8 w-8 px-2" style={{  fill: '#8e8e8e' }} />
                     <input
                         type="text"
-                        className="w-11/12 border-none bg-transparent outline-none "
+                        className="w-11/12 text-sm font-light border-none bg-transparent outline-none "
                         placeholder="Search" />
                 </div>
             </div>
             {/* Right */}
             <div className="d">
-                <nav className="flex items-center gap-x-7">
+                <nav className="flex items-center gap-x-5">
                     <NavLink to="/">
                         <HeaderIcon active Icon={AiOutlineHome} IconActive={AiFillHome}/>
                     </NavLink>
