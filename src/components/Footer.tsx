@@ -6,7 +6,7 @@ import { footerList, footerSelect } from "../types/footer"
 
 const Footer:FC = () => {
   return (
-    <div className="text-xs text-neutral-500">
+    <div className="text-xs text-neutral-500 px-3 pb-6 pt-3">
       <div className="">
         <nav className="flex flex-wrap justify-center">     
           {
