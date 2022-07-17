@@ -12,7 +12,14 @@ module.exports = {
       },
       width: {
         '975': '975px',
-      }
+      },
+      keyframes: {
+        appearing: {
+          '0%': { opacity: '0' },
+          '50%': { transform: '0.5'},
+          '100%': { transform: '1'},
+        },
+      },
     },
   },
   plugins: [

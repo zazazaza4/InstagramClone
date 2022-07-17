@@ -1,27 +1,44 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/Instagram_logo.png';
 import appStore from '../assets/app_store.png';
 import googlePlay from '../assets/google_play.png';
 import Footer from "../components/Footer";
 
+import imgs, {staticImg } from '../assets/login/index';
+
 const Login: FC = () => {
   const [hide, setHide] = useState<boolean>(true);
+  const [indexImage, setIndexImage] = useState<number>(0);
 
+  useEffect( () => {
+    const interval = window.setInterval(() => {
+
+      if (indexImage > 2) {
+        setIndexImage(indexImage => 0);
+      } else {
+        setIndexImage(indexImage => indexImage + 1);
+      }
+
+    }, 3000);
+
+    return () => window.clearInterval(interval);
+  }, [indexImage]);
 
   return (
     <section className="flex flex-col sm:bg-gray-100 overflow-hidden">
 
-      <main className="flex items-start justify-center w-screen flex-grow min-h-screen">
+      <main  className="flex items-start justify-center w-screen flex-grow min-h-[90vh]">
 
-        <article className="h-full flex items-center justify-center">
+        <article className="h-full flex items-center justify-center gap-10">
 
-          <div className="md:block hidden">
-            <div className="d">
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+          <div style={{backgroundImage: `url(${staticImg})`, backgroundSize: '468.32px 634.15px'}} 
+              className="hidden h-[581px] w-[450px] relative lg:block"
+          >
+            <div className='absolute top-[24px] left-[159px]'>
+      
+              <img src={imgs[indexImage]} className="" alt="" />
+    
             </div>
           </div>
 
